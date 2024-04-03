@@ -220,20 +220,12 @@ form button:hover {
         height: 50px; /* Reducir el tamaño del logo */
     }
 
-    nav ul {
-        display: none; /* Ocultar la lista de navegación */
-    }
 
     nav {
         position: relative; /* Ajustar la posición de la navegación */
     }
 
     
-
-    nav.open ul {
-        display: block; /* Mostrar la lista de navegación cuando se hace clic en el icono de hamburguesa */
-    }
-
     section {
         padding: 20px; /* Reducir el espacio interno de las secciones */
     }
