@@ -211,25 +211,57 @@ form button:hover {
 /* Estilos específicos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
     header {
-        padding: 10px;
+        padding: 10px 20px; /* Reducir el espacio interno del encabezado */
     }
 
     .logo img {
-        height: 30px;
+        height: 50px; /* Reducir el tamaño del logo */
     }
 
-    nav ul li {
-        margin-left: 10px;
+    nav ul {
+        display: none; /* Ocultar la lista de navegación */
+    }
+
+    nav {
+        position: relative; /* Ajustar la posición de la navegación */
+    }
+
+    nav:before {
+        content: '\2630'; /* Agregar el icono de hamburguesa */
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #c03737; /* Color del icono */
+        cursor: pointer;
+    }
+
+    nav.open ul {
+        display: block; /* Mostrar la lista de navegación cuando se hace clic en el icono de hamburguesa */
     }
 
     section {
-        padding: 30px;
+        padding: 20px; /* Reducir el espacio interno de las secciones */
     }
-}
-#llamada-accion {
-    background-color: #1d1d1d; /* Fondo blanco */
-    background-size:100px;
-    padding: 50px;
-    text-align: center;
-    
+
+    #inicio {
+        height: auto; /* Eliminar la altura fija */
+        padding: 50px 20px; /* Ajustar el relleno */
+    }
+
+    #iniciodescripcion {
+        padding: 30px; /* Ajustar el relleno */
+    }
+
+    footer {
+        padding: 20px; /* Ajustar el relleno del pie de página */
+    }
+
+    .telefono {
+        padding: 10px; /* Ajustar el relleno del área de contacto */
+    }
+
+    #llamada-accion {
+        padding: 30px; /* Ajustar el relleno de la sección de llamada a la acción */
+    }
 }
