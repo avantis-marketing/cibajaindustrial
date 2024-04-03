@@ -209,9 +209,11 @@ form button:hover {
 
 
 /* Estilos específicos para dispositivos móviles */
+
 @media only screen and (max-width: 768px) {
     header {
         padding: 10px 20px; /* Reducir el espacio interno del encabezado */
+        position: relative; /* Ajustar la posición del encabezado */
     }
 
     .logo img {
@@ -230,10 +232,12 @@ form button:hover {
         content: '\2630'; /* Agregar el icono de hamburguesa */
         font-size: 30px;
         position: absolute;
-        top: 20px;
+        top: 50%;
         right: 20px;
+        transform: translateY(-50%);
         color: #c03737; /* Color del icono */
         cursor: pointer;
+        z-index: 999; /* Superponer sobre todo */
     }
 
     nav.open ul {
@@ -265,3 +269,5 @@ form button:hover {
         padding: 30px; /* Ajustar el relleno de la sección de llamada a la acción */
     }
 }
+
+
