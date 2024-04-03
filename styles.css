@@ -268,6 +268,59 @@ form button:hover {
     #llamada-accion {
         padding: 30px; /* Ajustar el relleno de la sección de llamada a la acción */
     }
+/* Estilos nosotros movil */
+
+    #nosotros {
+        padding: 20px; /* Ajustar el relleno */
+    }
+
+    #nosotros h2 {
+        font-size: 1.5rem; /* Reducir el tamaño del título */
+        margin-bottom: 10px; /* Ajustar el margen inferior del título */
+    }
+
+    #nosotros p {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
+
+    footer {
+        padding: 20px; /* Ajustar el relleno del pie de página */
+    }
+
+    .telefono {
+        padding: 10px; /* Ajustar el relleno del área de contacto */
+    }
+/* Estilos servicios movil */
+
+    #servicio {
+        padding: 20px; /* Ajustar el relleno */
+        display: flex;
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+    }
+
+    .servicio-container {
+        width: 100%; /* Ajustar el ancho al 100% para ocupar todo el ancho disponible */
+        margin-bottom: 20px; /* Agregar margen inferior para separar los servicios */
+    }
+
+    .servicio-container img {
+        width: 100%; /* Ajustar el ancho de la imagen al 100% para que se ajuste al contenedor */
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+    }
+
+    .servicio-info {
+        text-align: center; /* Centrar el texto */
+    }
+
+    .servicio-info h3 {
+        font-size: 1.5rem; /* Reducir el tamaño del título */
+        margin-bottom: 10px; /* Ajustar el margen inferior del título */
+    }
+
+    .servicio-info p {
+        font-size: 1rem; /* Reducir el tamaño del texto */
+    }
 }
 
 
