@@ -12,6 +12,9 @@
             <img src="img/logo.png" alt="Logo de Tu Empresa">
         </div>
         <nav>
+            <div class="hamburguesa" onclick="toggleMenu()">
+                &#9776; <!-- Icono de hamburguesa -->
+            </div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
@@ -24,19 +27,17 @@
 
     <section id="inicio">
         <h1>¡TODOS TIENEN UN POTENCIAL A EXPLOTAR!</h1>
-        
     </section>
+
     <section id="iniciodescripcion">
         <p>En un mundo industrial dinámico y exigente, donde la eficiencia y la productividad son esenciales, nos enorgullece presentarnos como líderes indiscutibles en la venta de Suministros de Mantenimiento, Reparación y Operaciones (MRO), protección personal y limpieza.</p>
         <p>Con una trayectoria sólida y un compromiso inquebrantable con la excelencia, Cibaja industrial se ha convertido en la opción preferida para las empresas manufacturadoras más importantes.</p>
     </section>
 
-    
     <footer>
         <section id="llamada-accion">
             <h2>¡CONTÁCTANOS HOY MISMO!</h2>
-            <p>Descubre como podemos ayudarte a optimizar tus operaciones industriales y mejorar la seguridad de tu empresa </p>
-            
+            <p>Descubre cómo podemos ayudarte a optimizar tus operaciones industriales y mejorar la seguridad de tu empresa.</p>
         </section>
         
         <div class="telefono">
@@ -44,8 +45,12 @@
             <p>Correo electrónico: <a href="mailto:cuevas@Cibaja industrial.com">cuevas@Cibaja industrial.com</a></p>
         </div>
     </footer>
-    
 
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
