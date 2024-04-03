@@ -228,17 +228,7 @@ form button:hover {
         position: relative; /* Ajustar la posición de la navegación */
     }
 
-    nav:before {
-        content: '\2630'; /* Agregar el icono de hamburguesa */
-        font-size: 30px;
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        color: #c03737; /* Color del icono */
-        cursor: pointer;
-        z-index: 999; /* Superponer sobre todo */
-    }
+    
 
     nav.open ul {
         display: block; /* Mostrar la lista de navegación cuando se hace clic en el icono de hamburguesa */
