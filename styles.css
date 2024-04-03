@@ -1,0 +1,235 @@
+/* Estilos generales */
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d; /* color de fondo */
+    
+    
+}
+
+header {
+    background-color: #ffffff;
+    color: #d66262;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #c03737;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    position: relative;
+}
+
+/* Estilos específicos para cada sección */
+#inicio {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem; /* Tamaño de fuente más grande para el título */
+    font-weight: bold; /* Negrita para el título */
+    margin:auto
+    padding: 100px;
+    height: 20vh; /* Abarca toda la altura de la pantalla */
+    background-image: url('img/imagen_principal.jpg');
+    background-size: cover;
+    background-position: center; 
+}
+
+#inicio h1, #inicio p {
+    position: relative;
+    z-index: 1;
+}
+#iniciodescripcion {
+    background-color: #eee3e3; /* Fondo gris */
+    padding: 50px; /* Ajuste del padding */
+    text-align: center; /* Texto centrado */
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telefono {
+    background-color: #981818; /* Fondo oscuro sólido */
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    width: 100%; /* Abarcar todo el ancho */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+.telefono a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#boton-lubricantes {
+    margin-bottom: 20px; /* Agregar margen inferior */
+}
+
+.boton-explorar {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 15px 32px; /* Espacio alrededor del texto */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block;
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 0px 0px; /* Margen */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    border-radius: 8px; /* Radio de borde */
+}
+
+/* Estilos para el formulario de contacto */
+
+#contacto{
+
+text-align: left;
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#llamada-accion h2 {
+    color: #ffffff; /* Color del título */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+#llamada-accion p {
+    color: #ffffff; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño de fuente */
+}
+
+/* Estilos para el formulario de nosotros */
+#nosotros {
+    background-image: url('img/fondo2.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño de fuente más grande para el título */
+    
+    padding: 50px; /* Ajuste de espacio interno */
+    text-align: center; /* Centra el texto horizontalmente */
+    height: 68vh; /* Establece la altura al 100% del viewport */
+}
+/* Estilos para el formulario de servicio*/
+#servicio {
+    background-image: url('img/fondo1.jpg'); 
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.servicio-container {
+    width: 25%;
+    margin: 0 10px; /* Ajuste del margen horizontal */
+}
+
+.servicio-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.servicio-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.servicio-info h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.servicio-info p {
+    color: #666;
+    font-size: 1rem;
+}
+
+
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+#llamada-accion {
+    background-color: #1d1d1d; /* Fondo blanco */
+    background-size:100px;
+    padding: 50px;
+    text-align: center;
+    
+}
